@@ -1,0 +1,38 @@
+.projects {
+  &__inner {
+    @media (width < 1448px) {
+      overflow-x: scroll;
+    }
+
+    @media (width >= 1448px) {
+      margin-top: 32px;
+    }
+  }
+
+  &__title {
+    @media (width >=1448px) {
+      width: 562px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: fit-content;
+
+    @media (width >= 1448px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 100%;
+    }
+  }
+
+  &__item {
+    width: 252px;
+
+    @media (width >= 1448px) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: var(--font-family-primary);
+  color: var(--text-primary);
+  background-color: var(--background-primary);
+}
+
+main {
+  flex: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: none;
+  outline-width: 3px;
+  outline-style: solid;
+  outline-color: var(--accent-primary-engage);
+  outline-offset: 1px;
+  border-radius: 3px;
+}
